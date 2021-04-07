@@ -8,6 +8,9 @@
 /* Global */
 body {
     background-color: #073b4c;
+
+    height: 100%;
+    min-height: 100vh;
 }
 
 .tag {
@@ -67,7 +70,6 @@ span, p, li {
     display: inline-block;
 }
 
-
 .upper-part .content img {
     width: 200px;
     height: 200px;
@@ -84,6 +86,35 @@ span, p, li {
     margin: 25px 50px;
 
     border: #ef476f 4px solid;
+}
+
+
+@media (max-width: 500px) {
+    .upper-part .content {
+        margin-left: 20px;
+    }
+
+    .upper-part .content h1 {
+        font-size: 40px;
+        padding-top: 0;
+        margin: 0px 0px 30px 18px;
+    }
+
+    .upper-part .content span {
+        font-size: 16px;
+    }
+
+    .upper-part .content .address {
+        margin-right: 100px;
+    }
+
+    .upper-part .content img {
+        width: 100px;
+        height: 100px;
+
+
+        margin: 70px 10px;
+    }
 }
 
 
@@ -105,10 +136,27 @@ span, p, li {
     font-size: 25px;
 }
 
+@media (max-width: 500px) {
+    .main {
+        margin-top: 250px;
+        column-count: 1;
+    }
+    
+    .main div {
+        margin: 50px 0px 0px 15px;
+    }
+}
+
 
 /* Work Experience ------------ */
 .work-experience {
     height: 500px !important;
+}
+
+@media (max-width: 500px) {
+    .work-experience {
+        height: min-content !important;
+    }
 }
 
 
@@ -116,7 +164,7 @@ span, p, li {
 
 /* Skills ------------ */
 .skills {
-    padding-top: 80px;
+    padding-top: 85px;
 }
 
 .skills li {
@@ -147,25 +195,78 @@ span, p, li {
     margin-right: 5px;
 }
 
+@media (max-width: 500px) {
+    .skills {
+        padding-top: 0px;
+    }
+    
+    .skills li {
+        margin: 0px 80px 0px 80px;
+    }
+    .skills input {
+        float: right;
+        width: 300px;
+    
+        margin: 10px 30px 30px 0px;
+    }
+    
+    .skills span {
+        padding: 0;
+        margin: 20px 0px 20px -30px;
+    }
+    
+    .skills span i {
+        margin-right: 5px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .skills input {
+        width: 900px
+    }
+}
 
 
 /* Hobbies ------------ */
-.hobbies span {
+.hobbies .hobbies-content {
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+.hobbies .hobbies-content span {
     font-size: 20px;
-    margin: 10px 40px 30px 40px;
     display: inline-block;
+    margin-right: 70px;
 }
 
-.hobbies span i {
+.hobbies .hobbies-content span i {
     font-size: 30px;
     display: block;
-    margin: 5px 25px;
+    margin-left: 25px;
 }
 
+
 .fa-hiking {
-    margin: 5px 18px !important;
+    margin-left: 15px !important;
 }
 
 .fa-gamepad {
-    margin: 5px 18px !important;
+    margin-left: 15px !important;
+}
+
+@media (max-width: 500px) {
+    .hobbies .hobbies-content {
+        margin-top: 5px;
+        margin-bottom: 40px;
+    }
+    .hobbies .hobbies-content span {
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 30px;
+    }
+    
+    .hobbies .hobbies-content span i {
+        font-size: 30px;
+        display: block;
+        margin-left: 25px;
+    }
 }
