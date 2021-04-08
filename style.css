@@ -76,6 +76,16 @@ span, p, li {
 
 .upper-part .content .phone-number {
     display: inline-block;
+    margin-right: 30%;
+}
+
+.upper-part .content .email {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.upper-part .content .resume {
+    display: inline-block;
 }
 
 .upper-part .content img {
@@ -98,6 +108,10 @@ span, p, li {
 
 
 @media (max-width: 500px) {
+    .upper-part {
+        height: 260px;
+    }
+
     .upper-part .content {
         margin-left: 20px;
     }
@@ -105,7 +119,7 @@ span, p, li {
     .upper-part .content h1 {
         font-size: 40px;
         padding-top: 0;
-        margin: 0px 0px 30px 18px;
+        margin: 0px 0px 10px 18px;
     }
 
     .upper-part .content span {
@@ -188,10 +202,34 @@ span, p, li {
     margin: 5px 0px;
 }
 .skills input {
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 30px;
+    height: 5px;
+    
     float: right;
     width: 300px;
+    
+    margin: 18px 30px 0px 0px;
+}
+.skills input::-webkit-slider-thumb {
+    -webkit-appearance: none;
 
-    margin-right: 30px;
+    height: 15px;
+    width: 16px;
+    border-radius: 50%;
+    background: var(--tag-color);
+}
+  
+.skills li:hover {
+    cursor: default;
+    color: var(--option-list-color);
+}
+.skills li:hover + input {
+    background-color: var(--tag-color);
+}
+.skills li:hover + input::-webkit-slider-thumb {
+    background: white;
 }
 
 .skills span {
@@ -284,5 +322,16 @@ span, p, li {
         font-size: 30px;
         display: block;
         margin-left: 25px;
+    }
+}
+
+@media (min-width: 1500px) {
+    .hobbies .hobbies-content {
+        margin-left: 250px;
+    }
+    .hobbies .hobbies-content span {
+        font-size: 20px;
+        display: inline-block;
+        margin-right: 170px;
     }
 }
