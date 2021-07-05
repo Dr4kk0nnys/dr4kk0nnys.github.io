@@ -6,6 +6,7 @@
     --link-color: #ff3459;
     --main-header-background: #fca311;
     --info-background: #fca311;
+    --highlighted-list-background: #fca311;
 }
 
 
@@ -82,4 +83,119 @@ img {
 .info div span a {
     text-decoration: none;
     color: var(--link-color);
+}
+
+
+.main {
+    display: flex;
+}
+
+.content {
+    padding: 0px 0px;
+    margin-left: 50px;
+}
+
+
+.skills {
+}
+
+.skills-set {
+    font-size: 20px;
+    list-style-type: none;
+}
+
+.skills-set li {
+    display: inline-block;
+    line-height: 50px;
+}
+
+.skills-set input {
+    -webkit-appearance: none;
+    background: rgb(209, 69, 255);
+    border-radius: 30px;
+    height: 5px;
+
+    float: right;
+    width: 45vh;
+    
+    margin: 25px 0px 0px 30px;
+}
+
+.skills-set input::-webkit-slider-thumb {
+    -webkit-appearance: none;
+
+    height: 15px;
+    width: 16px;
+    border-radius: 50%;
+    background: rgb(32, 230, 226);
+}
+
+
+.side-content {
+    padding: 0px 0px;
+
+    max-width: 250px;
+}
+
+
+.highlight-list {
+    text-align: center;
+    margin-left: 0px;
+    padding: 0px 0px;
+}
+
+.highlight-list li {
+    text-decoration: none;
+    list-style-type: none;
+
+    padding: 10px 1px;
+    margin: 5px 5px 0px 0px;
+
+    background-color: var(--highlighted-list-background);
+    border-radius: 8px;
+}
+
+
+.languages {
+    text-decoration: none;
+    list-style-type: none;
+
+    font-size: 20px;
+
+    padding: 0px 0px;
+}
+
+.languages li {
+    margin-top: 10px;
+}
+
+.square {
+    width: 30px;
+    height: 30px;
+    padding: 1px 1px;
+
+    margin: 0px 14px 0px 0px;
+
+    background-color: #fca311;
+
+    display: inline-block;
+}
+
+
+.empty-square {
+    width: 30px;
+    height: 30px;
+    padding: 1px 1px;
+
+    margin: 0px 14px 0px 0px;
+
+    background-color: #c0c0c0;
+
+    display: inline-block;
+}
+
+
+.interests {
+    color: white;
+    font-size: 20px;
 }
