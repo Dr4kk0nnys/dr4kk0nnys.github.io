@@ -1,28 +1,30 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
 
 :root {
     --text-color: #fff;
-    --bold-color: #ff3459;
-    --link-color: #ff3459;
-    --main-header-background: #fca311;
-    --info-background: #fca311;
+    --bold-color: #ef476f;
+    --link-color: #ffb300;
+    --title-color: #118ab2;
+
+    --job-role-color: #fec89a;
+
+    --main-header-background: #264653;
+
+    --info-background-primary: #06d6a0;
+    --info-background-secondary: #118ab2;
+
     --highlighted-list-background: #fca311;
 }
 
 
 html, body {
     padding: 0px 0px;
-    margin: 20px 0px 0px 20px;
+    margin: 10px 0px 0px 20px;
 }
 
 a {
     text-decoration: none;
     color: var(--link-color);
-}
-
-.bold {
-    font-weight: 900;
-    color: var(--bold-color);
 }
 
 img {
@@ -32,6 +34,41 @@ img {
 
     float: left;
 }
+
+.bold {
+    font-weight: 900;
+    color: var(--bold-color);
+}
+
+.title {
+    font-family: cursive;
+    color: var(--title-color);
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgb(191, 191, 191); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 165, 165); 
+  }
+
+
+
 
 .main-header {
     margin-left: 260px;
@@ -45,43 +82,72 @@ img {
 .main-header h1 {
     color: var(--text-color);
     font-size: 50px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
     padding: 0px 0px;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-top: 10px;
+    margin-bottom: 30px;
 }
 
 .main-header .job-role {
-    color: var(--text-color);
+    background: -webkit-linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+
     font-size: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 
-    margin-bottom: 20px;
-    display: block;
+    float: right;
+    margin-top: -80px;
+}
 
-    text-decoration: underline;
+@keyframes gradient {
+    0% {
+        text-shadow: 0 0 12px #ee7752;
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 0 0 9px #23d5ab;
 
+    }
+    100% {
+        background-position: 0% 50%;
+        text-shadow: 0 0 12px #ee7752;
+
+    }
 }
 
 .main-header .introduction {
     font-size: 15px;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--text-color);
 }
 
 
 .info {
     padding: 15px 10px;
-    margin-top: 10px;
+    margin-top: 8px;
 
-    background-color: var(--info-background);
+    background: linear-gradient(45deg, var(--info-background-primary), var(--info-background-secondary));
 
     display: flex;
     justify-content: space-evenly;
 
+    font-family: 'Quicksand', sans-serif;
     color: var(--text-color);
 }
+
+
+
+
+
+
+
 
 
 .main {
@@ -90,110 +156,134 @@ img {
 
 .content {
     padding: 0px 0px;
-    margin-left: 50px;
+    margin-left: 80px;
+}
+
+.content div {
+    margin-bottom: 50px;
 }
 
 
-.skills {
-}
 
+
+
+
+/* ul */
 .skills-set {
-    font-size: 20px;
     list-style-type: none;
+    column-count: 3;
+}
+
+@media (min-width: 1500px) {
+    .skills-set { column-count: 6; }
 }
 
 .skills-set li {
-    display: inline-block;
+    font-size: 20px;
+    font-family: 'Quicksand', sans-serif;
     line-height: 50px;
 }
 
-.skills-set input {
-    -webkit-appearance: none;
-    background: rgb(209, 69, 255);
-    border-radius: 30px;
-    height: 5px;
 
-    float: right;
-    width: 45vh;
-    
-    margin: 25px 0px 0px 30px;
+
+
+
+
+
+.work-experience ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+
+    list-style-type: circle;
 }
 
-.skills-set input::-webkit-slider-thumb {
-    -webkit-appearance: none;
-
-    height: 15px;
-    width: 16px;
-    border-radius: 50%;
-    background: rgb(32, 230, 226);
+.work-experience ul li {
+    margin-top: 30px;
 }
+
+
+
+
+
+
+
+
+
+.achievements ul {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+
+    list-style-type: circle;
+}
+
+.achievements ul li {
+    margin-top: 30px;
+}
+
+
+
+
+
+
 
 
 .side-content {
-    padding: 0px 0px;
-
-    max-width: 250px;
+    max-width: 200px;
 }
 
 
 .highlight-list {
     text-align: center;
-    margin-left: 0px;
+    
+    margin-left: 20px;
     padding: 0px 0px;
+    
+    width: 180px;
 }
 
 .highlight-list li {
     text-decoration: none;
     list-style-type: none;
 
-    padding: 10px 1px;
-    margin: 5px 5px 0px 0px;
+    padding: 10px 0px;
+    margin: 5px 0px;
 
     background-color: var(--highlighted-list-background);
+    color: var(--text-color);
+
+    font-family: 'Quicksand', sans-serif;
+
     border-radius: 8px;
 }
 
 
 .languages {
-    text-decoration: none;
     list-style-type: none;
 
     font-size: 20px;
 
     padding: 0px 0px;
+    margin-left: 20px;
 }
 
 .languages li {
+    font-family: 'Quicksand', sans-serif;
+
     margin-top: 10px;
 }
 
 .square {
     width: 30px;
     height: 30px;
-    padding: 1px 1px;
 
-    margin: 0px 14px 0px 0px;
+    margin: 5px 5px 0px 0px;
 
+    display: inline-block;
+}
+
+.fill {
     background-color: #fca311;
-
-    display: inline-block;
 }
-
-
-.empty-square {
-    width: 30px;
-    height: 30px;
-    padding: 1px 1px;
-
-    margin: 0px 14px 0px 0px;
-
+.empty {
     background-color: #c0c0c0;
-
-    display: inline-block;
-}
-
-
-.interests {
-    color: white;
-    font-size: 20px;
 }
