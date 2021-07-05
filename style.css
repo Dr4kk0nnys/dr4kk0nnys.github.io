@@ -1,13 +1,85 @@
-.bold {
-    font-weight: 900;
-    
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+:root {
+    --text-color: #fff;
+    --bold-color: #ff3459;
+    --link-color: #ff3459;
+    --main-header-background: #fca311;
+    --info-background: #fca311;
 }
 
 
+html, body {
+    padding: 0px 0px;
+    margin: 20px 0px 0px 20px;
+}
+
+
+
+.bold {
+    font-weight: 900;
+    color: var(--bold-color);
+}
+
+img {
+    width: 240px;
+    height: 275px;
+    border-radius: 30px;
+
+    float: left;
+}
+
 .main-header {
-    margin: 20px 50px;
+    margin-left: 260px;
+    padding: 5px 50px 30px;
+
+    min-height: 240px;
+
+    background-color: var(--main-header-background);
+}
+
+.main-header h1 {
+    color: var(--text-color);
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+
+    padding: 0px 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.main-header .job-role {
+    color: var(--text-color);
+    font-size: 30px;
+    font-family: 'Montserrat', sans-serif;
+
+    margin-bottom: 20px;
+    display: block;
+
+    text-decoration: underline;
+
 }
 
 .main-header .introduction {
-    font-size: 20px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+.info {
+    padding: 15px 10px;
+    margin-top: 10px;
+
+    background-color: var(--info-background);
+
+    display: flex;
+    justify-content: space-evenly;
+
+    color: var(--text-color);
+}
+
+.info div span a {
+    text-decoration: none;
+    color: var(--link-color);
 }
