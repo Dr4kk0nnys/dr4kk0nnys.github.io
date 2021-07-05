@@ -50,22 +50,44 @@ img {
 ::-webkit-scrollbar {
     width: 8px;
     height: 0px;
-  }
+}
   
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
     background: rgb(191, 191, 191); 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
     background: rgb(165, 165, 165); 
-  }
+}
+
+/* Small phones */
+@media (max-width: 500px) {
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    img {
+        width: 120px;
+        height: 145px;
+
+        margin: 10px 10px;
+    }
+
+    .title {
+        margin-left: 30px;
+    }
+}
 
 
 
@@ -142,6 +164,40 @@ img {
     color: var(--text-color);
 }
 
+@media (max-width: 500px) {
+    
+    .main-header {
+        margin: 0;
+        padding: 0px 0px 30px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+        
+        padding: 10px 10px 30px 0px;
+        margin: 0;
+    }
+
+    .main-header .job-role {
+        margin-right: 50px;
+    }
+
+    .info {
+        padding: 5px 0px;
+    
+        display: block;
+    }
+
+    .info div {
+        text-align: center;
+        padding: 5px 0px;
+    }
+}
+
 
 
 
@@ -163,6 +219,21 @@ img {
     margin-bottom: 50px;
 }
 
+@media (max-width: 500px) {
+    .main {
+        display: block;
+    }
+
+    .content {
+        padding: 0px 0px;
+        margin-left: 0px;
+    }
+
+    .content div {
+        margin-bottom: 50px;
+    }
+}
+
 
 
 
@@ -176,6 +247,10 @@ img {
 
 @media (min-width: 1500px) {
     .skills-set { column-count: 6; }
+}
+
+@media (max-width: 500px) {
+    .skills-set { column-count: 1; }
 }
 
 .skills-set li {
@@ -286,4 +361,43 @@ img {
 }
 .empty {
     background-color: #c0c0c0;
+}
+
+
+@media (max-width: 500px) {
+    .side-content { max-width: 100%; }
+
+
+    .highlight-list {
+        text-align: center;
+
+        margin: 0px auto;
+        width: 90%;
+    }
+
+    .highlight-list li {
+
+        padding: 10px 0px;
+        margin: 5px 0px;
+    }
+
+
+    .languages {
+        margin-left: 55px;
+    }
+
+    .languages li {
+        font-family: 'Quicksand', sans-serif;
+
+        margin-top: 10px;
+    }
+
+    .square {
+        width: 30px;
+        height: 30px;
+
+        margin: 5px 5px 0px 0px;
+
+        display: inline-block;
+    }
 }
