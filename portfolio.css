@@ -132,7 +132,7 @@ img {
 
 
 .footer {
-    padding: 20px 0px 0px 0px;
+    padding: 80px;
 
     text-align: center;
     
@@ -174,10 +174,21 @@ img {
 
 
 
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
 .project {
     display: flex;
 
     margin-bottom: 80px;
+}
+
+@media (min-width: 1500px) {
+    .project {
+        max-width: 45%;
+        margin: 30px;
+    }
 }
 
 .project-text {
@@ -239,12 +250,14 @@ img {
 }
 
 .info .technologies {
-    display: contents;
+    display: inline;
 }
 
 .info .technologies span {
-    margin: 5px 1px;
-    padding: 5px 18px;
+    display: inline-flex;
+
+    padding: 5px 20px;
+    margin: 5px;
 
     border-radius: 30px;
 
