@@ -69,6 +69,31 @@ img {
 }
 
 
+/* Small phones */
+@media (max-width: 500px) {
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    img {
+        float: none;
+    }
+
+    .profilePicture {
+        width: 120px;
+        height: 145px;
+
+        margin: 10px 10px;
+
+        float: left;
+    }
+}
+
+
 
 
 .main-header {
@@ -129,6 +154,41 @@ img {
 }
 
 
+@media (max-width: 500px) {
+    
+    .main-header {
+        margin: 0;
+        padding: 0px 0px 30px;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .main-header h1 {
+        font-size: 30px;
+        
+        padding: 10px 10px 30px 0px;
+        margin: 0;
+    }
+
+    .main-header .job-role {
+        margin-right: 50px;
+    }
+
+    .contacts {
+        padding: 5px 0px;
+    
+        display: block;
+    }
+
+    .contacts div {
+        text-align: center;
+        padding: 5px 0px;
+    }
+}
+
+
 
 
 .footer {
@@ -171,6 +231,20 @@ img {
     }
 }
 
+@media (max-width: 500px) {
+    .footer {
+        font-size: 30px
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -190,6 +264,20 @@ img {
         margin: 30px;
     }
 }
+
+@media (max-width: 500px) {
+    .project {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: rgb(153, 153, 153) 1px solid;
+    }
+}
+
+
+
+
+
 
 .project-text {
     display: block;
@@ -213,8 +301,18 @@ img {
 @keyframes scheduleApiAnimation { 0% { content: url('images/scheduleApi-1.jpg'); } 50% { content: url('images/scheduleApi-2.jpg'); } 100% { content: url('images/scheduleApi-3.jpg'); } }
 
 
+@media (max-width: 500px) {
+    .carrousel {
+        width: 90%;
+        min-width: 90%;
+        max-width: 90%;
+        height: 400px;
 
+        display: inline-block;
 
+        margin-top: 10px;
+    }
+}
 
 
 
