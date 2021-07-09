@@ -5,9 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/f0cb10bafc.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="portfolio.css">
 </head>
 <body>
+
+    <img src="images/Profile.jpg" alt="Profile Picture.">
+
+    <div class="main-header">
+        <h1>Renato Versiani</h1>
+        <span class="job-role">Developer</span>
+        <span class="introduction">Hi! I'm Renato, more commonly known as Dr4kk0nnys!
+             I am from Brazil, and speak fluent English since 12.
+             My background with programming started at 11 years old, making Minecraft mods with java.
+             After a long path, I've mastered <span class="bold">Javascript</span>, <span class="bold">Typescript</span>, <span class="bold">Python</span> and numerous concepts, such as <span class="bold">OOP</span>, <span class="bold">Functional Programming</span>, <span class="bold">Micro contracts</span>, <span class="bold">Design Patterns</span>, etc ...
+             The reason I speak English with such ease is because of this early experience. I'm not the best, but I'm trying to improve every day.
+        </span>
+    </div>
+
+    
+    <div class="contacts">
+        <div class="email">
+            <i class="fas fa-envelope"></i>
+            <span>renatoversianidrakk@gmail.com</span>
+        </div>
+
+        <div class="location">
+            <i class="fas fa-map-marker-alt"></i>
+            <span>Montes Claros, MG, Brazil.</span>
+        </div>
+
+        <div class="phone-number">
+            <i class="fas fa-mobile-alt"></i>
+            <span>+55 (38) 9 8402-2924</span>
+        </div>
+
+        <div class="linkedin">
+            <i class="fab fa-linkedin"></i>
+            <span><a href="https://www.linkedin.com/in/renato-versiani-dr4kk0nnys/" target="_blank">Renato Versiani</a></span>
+        </div>
+
+        <div class="github">
+            <i class="fab fa-github"></i>
+            <span><a href="https://www.github.com/Dr4kk0nnys/" target="_blank">Dr4kk0nnys</a></span>
+        </div>
+    </div>
+
     <div class="project">
         <img src="images/socialMedia-1.jpg" alt="Social Media image" id="socialMedia" class="carrousel">
 
@@ -29,7 +72,9 @@
                 <span class="overview">This project consisted of a reddit styled social media. It would have several categories, such as "Crypto Currency", "News", "Memes" and more ... Users would be able to access any of those categories, with instantaneous load speeds. Such fast load speeds were possible because of an asynchronous, cache like, backend design. One of the most advanced I've done so far. It had NEXT.js levels of speed, but backend based. It offered me great, real-world code design, with difficult deadlines.</span>
 
                 <br>
-                <a href="https://github.com/Dr4kk0nnys/SocialMedia/">Check it out here</a>
+                <div class="links">
+                    <a href="https://github.com/Dr4kk0nnys/SocialMedia/">Check it out</a>
+                </div>
             </div>
         </div>
     </div>
@@ -44,7 +89,7 @@
                     <span>Python</span>
                     <span>Django</span>
                     <span>Django-Rest</span>
-                    <span>My SQL</span>
+                    <span>MySQL</span>
                     <span>Swagger UI</span>
                     <span>Open API</span>
                     <span>Unitary Tests</span>
@@ -55,7 +100,10 @@
                 <span class="overview">REST API using Django. This project was a huge step up on my abilities to make highly maintainable code, with efficient algorithms. Some design patters were used following Clean Code's guides. Also, had to maintain quality control in check, as well as test rate to at least 80%.</span>
 
                 <br>
-                <a href="https://github.com/Dr4kk0nnys/django-schedule-api/">Check it out here</a>
+
+                <div class="links">
+                    <a href="https://github.com/Dr4kk0nnys/django-schedule-api/">Check it out</a>
+                </div>
             </div>
         </div>
 
@@ -78,18 +126,18 @@
                     <span>Mongo DB</span>
                     <span>Session handling</span>
                     <span>Login & Register</span>
-                    <span>Backend</span>
-                    <span>Frontend</span>
                 </div>
                 <br>
 
                 <h3 class="topic quick-summarize">Info</h3>
-                <span class="overview">To do website and REST API, using React on the frontend and Express on the backend. A big issue while making this project was avoiding race-conditions, but the backend has a really great tutorial on how to do it. The overall note of this project is definitely my highest. Both frontend and backend communicate with each other in realtime. A great feature and one of my favorites is the session handling, making you able to close the website, and it will remember who you are, avoiding the need to login again. All of that was made thinking on security first, but also speed and convenience.</span>
+                <span class="overview">To do Full Stack website and REST API, using React on the frontend and Express on the backend. A big issue while making this project was avoiding race-conditions, but the backend has a really great tutorial on how to do it. The overall note of this project is definitely my highest. Both frontend and backend communicate with each other in realtime. A great feature and one of my favorites is the session handling, making you able to close the website, and it will remember who you are, avoiding the need to login again. All of that was made thinking on security first, but also speed and convenience.</span>
 
                 <br>
-                <a href="https://github.com/Dr4kk0nnys/todo/">Check it out here</a>
-                <br>
-                <a href="https://to-do-list-frontend-dr4kk0nnys.herokuapp.com/to-dos/">Demo version here ( up to 2 minutes to load - heroku based )</a>
+                <div class="links">
+                    <a href="https://github.com/Dr4kk0nnys/todo/">Check it out</a>
+                    <br>
+                    <a href="https://to-do-list-frontend-dr4kk0nnys.herokuapp.com/to-dos/">Demo version ( up to 2 minutes to load - heroku based )</a>
+                </div>
             </div>
         </div>
     </div>
@@ -110,7 +158,9 @@
                 <span class="overview">My first real business. I've developed this algorithm and sold it's use to many users. It automatically published a list of products on facebook market place and groups designed to sell. I've also developed a similar algorithm, but for Instagram, where the target was to gain followers to your page. The algorithm did that by following hundreds of users, adding the profile url to a database. And un-following those users after 3 days.</span>
 
                 <br>
-                <a href="https://github.com/Dr4kk0nnys/Facebook-Publisher/">Check it out here</a>
+                <div class="links">
+                    <a href="https://github.com/Dr4kk0nnys/Facebook-Publisher/">Check it out</a>
+                </div>
             </div>
         </div>
 
