@@ -40,9 +40,17 @@ img {
     color: var(--bold-color);
 }
 
+.underline {
+    text-decoration: underline;
+}
+
 .title {
     font-family: cursive;
     color: var(--title-color);
+}
+
+ul .no-list {
+    list-style-type: none;
 }
 
 

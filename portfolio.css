@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
+:root {
+    --info-title-color: salmon;
+    --info-value-color: darkgray;
+
+    --technologies-border-color: #ffb300;
+
+    --link-color: #ffb300;
+
+    --footer-background-primary: #06d6a0;
+    --footer-background-secondary: #118ab2;}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 0px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(191, 191, 191); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 165, 165); 
+}
+
+html, body {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 5px 5px 0px 5px;
+}
+body { 
+    display: flex; 
+    flex-direction: column; 
+}
+
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+
+
+
+.footer {
+    padding: 20px 0px 0px 0px;
+
+    text-align: center;
+    
+    color: white;
+    font-size: 50px;
+    font-family: 'Quicksand', sans-serif;
+
+    margin-top: auto;
+
+}
+
+.footer a {
+    background: -webkit-linear-gradient(-45deg, #52eede, #3c64e7, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+}
+
+
+@keyframes gradient {
+    0% {
+        text-shadow: 0 0 12px #526fee;
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+        text-shadow: 0 0 9px #23d5ab;
+
+    }
+    100% {
+        background-position: 0% 50%;
+        text-shadow: 0 0 12px #526fee;
+
+    }
+}
+
+
+
+
+.project {
+    display: flex;
+
+    margin-bottom: 80px;
+}
+
+.project-text {
+    display: block;
+
+    margin-left: 15px;
+
+    font-family: 'Quicksand', sans-serif;
+}
+
+.carrousel {
+    width: 40vh;
+    min-width: 40vh;
+    max-width: 40vh;
+    height: 600px;
+
+}
+#socialMedia { animation: socialMediaAnimation infinite 10s; }
+@keyframes socialMediaAnimation { 0% { content: url('images/socialMedia-1.jpg'); } 100% { content: url('images/socialMedia-2.jpg'); } }
+
+#scheduleApi { animation: scheduleApiAnimation infinite 10s; }
+@keyframes scheduleApiAnimation { 0% { content: url('images/scheduleApi-1.jpg'); } 50% { content: url('images/scheduleApi-2.jpg'); } 100% { content: url('images/scheduleApi-3.jpg'); } }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.title {
+    font-size: 36px;
+}
+
+.info {
+    font-size: 18px;
+
+    margin-top: 50px;
+}
+
+.info .topic {
+    color: var(--info-title-color);
+    display: inline-block;
+    
+    margin: 15px 0px 15px 0px;
+}
+.info .quick-summarize {
+    margin-bottom: 0px;
+}
+
+.info .technologies {
+    display: contents;
+}
+
+.info .technologies span {
+    margin: 5px 1px;
+    padding: 5px 18px;
+
+    border-radius: 30px;
+
+    background-color: var(--technologies-border-color);
+    color: black;
+}
+
+.info .overview {
+    padding: 10px;
+}
+
+
+
+
