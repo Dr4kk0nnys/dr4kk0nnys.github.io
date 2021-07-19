@@ -1,0 +1,27 @@
+.main-certificate {
+    width: 100%;
+    height: 100%;
+}
+
+.main-certificate img {
+    width: 46%;
+    height: auto;
+
+    max-height: 60vh;
+
+    border-radius: 5px;
+
+    margin: 30px 2%;
+}
+
+.brief {
+    width: 100%;
+
+    display: block;
+
+    font-family: 'Quicksand', sans-serif;
+    font-size: 20px;
+    color: black;
+
+    text-align: center;
+}
