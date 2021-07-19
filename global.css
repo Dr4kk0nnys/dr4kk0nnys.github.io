@@ -1,0 +1,80 @@
+
+html, body {
+    padding: 0px 0px;
+    margin: 10px 0px 0px 20px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--link-color);
+}
+
+img {
+    width: 240px;
+    height: 275px;
+    border-radius: 30px;
+
+    float: left;
+}
+
+.bold {
+    font-weight: 900;
+    color: var(--bold-color);
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.title {
+    font-family: cursive;
+    color: var(--title-color);
+}
+
+ul .no-list {
+    list-style-type: none;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+    height: 0px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(191, 191, 191); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(165, 165, 165); 
+}
+
+/* Small phones */
+@media (max-width: 500px) {
+    
+    html, body {
+        margin: 0;
+        padding: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
+
+    img {
+        width: 120px;
+        height: 145px;
+
+        margin: 10px 10px;
+    }
+
+    .title {
+        margin-left: 30px;
+    }
+}
