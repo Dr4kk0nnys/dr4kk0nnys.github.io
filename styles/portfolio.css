@@ -294,11 +294,11 @@ img {
     height: 600px;
 
 }
-#socialMedia { animation: socialMediaAnimation infinite 10s; }
-@keyframes socialMediaAnimation { 0% { content: url('images/socialMedia-1.jpg'); } 100% { content: url('images/socialMedia-2.jpg'); } }
+/* #socialMedia { animation: socialMediaAnimation infinite 10s; }
+@keyframes socialMediaAnimation { 0% { content: url('../images/socialMedia-1.jpg'); } 100% { content: url('../images/socialMedia-2.jpg'); } }
 
 #scheduleApi { animation: scheduleApiAnimation infinite 10s; }
-@keyframes scheduleApiAnimation { 0% { content: url('images/scheduleApi-1.jpg'); } 50% { content: url('images/scheduleApi-2.jpg'); } 100% { content: url('images/scheduleApi-3.jpg'); } }
+@keyframes scheduleApiAnimation { 0% { content: url('../images/scheduleApi-1.jpg'); } 50% { content: url('../images/scheduleApi-2.jpg'); } 100% { content: url('../images/scheduleApi-3.jpg'); } } */
 
 
 @media (max-width: 500px) {
