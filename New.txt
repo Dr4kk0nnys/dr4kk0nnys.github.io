@@ -1,0 +1,31 @@
+Renato, Harvard educated Full Stack Senior Developer
+
+
+More commonly known as Dr4kk0nnys, started developing at 11 years old and currently have 8 years of experience writing highly efficient, scalable code. Experienced in application design, architecture, development, testing and deployment.
+
+• Online CV - https://dr4kk0nnys.github.io
+
+Currently work with multiple programming languages and technologies, such as:
+• Node.Js (since 2016)
+• Typescript (since 2018)
+• Javascript (since 2016)
+• React (since 2019)
+• Nest (since 2021)
+• Angular (since 2019)
+• AWS & Docker (since 2018)
+• Python (since 2014)
+• Java (since 2014)
+• Pandas (since 2018)
+• MatPlotLib (since 2019)
+• C# (since 2014)
+• Postgres (since 2016)
+• AGILE / SCRUM (since 2017)
+
+
+Languages I speak:
+• Portuguese - Native
+• English - Fluent
+• French  - Intermediate
+• Spanish - Intermediate
+
+

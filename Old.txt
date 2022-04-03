@@ -1,0 +1,47 @@
+Hi! I'm Renato, more commonly known as Dr4kk0nnys! I am from Brazil, and speak fluent English since 12. Developing and Design / Drawing are my passion and I really feel like I'm going somewhere with it. I'm not the best, but I'm trying to improve every day.
+
+My background with programming started at a very young age ( I started programming at 11 years old, making Minecraft mods with java. ). The reason I speak English with such ease is because of this early experience.
+
+I currently work with multiple programming languages, such as:
+• Java | • Python 3 | • Typescript | • JavaScript | • C#
+
+https://github.com/Dr4kk0nnys/ - My Github
+https://dr4kk0nnys.github.io/      - My curriculum
+
+A list with my favorite open-source projects:
+• https://github.com/Dr4kk0nnys/SocialMedia
+• https://github.com/Dr4kk0nnys/LWJGL-FlappyBird
+• https://github.com/Dr4kk0nnys/Dr4kk0_Assistant_Android/
+• https://github.com/Dr4kk0nnys/TicTacToe_Java
+• https://github.com/Dr4kk0nnys/playlist-creator
+• https://github.com/Dr4kk0nnys/django-schedule-api
+• https://github.com/Dr4kk0nnys/Financial-System
+• https://github.com/Dr4kk0nnys/dr4kk0_assistant_4
+• https://github.com/Dr4kk0nnys/ToDo
+• https://github.com/Dr4kk0nnys/Type-Master
+• https://github.com/Dr4kk0nnys/remote-phone-access
+• https://github.com/Dr4kk0nnys/GitLogger
+• https://github.com/Dr4kk0nnys/Database_python
+
+I have great experience with the following databases:
+◉ MySQL
+◉ MongoDB
+◉ Postgres
+
+My goal as a person is to never neglect reason by emotion. To be as fair as possible, and always be ready to change, no matter how hard it is or it will be.
+My goal as a software engineer is to always help. Shaping software as a way to reach for others. To create slim and highly-performance code. And to always be dispose to learn more and more.
+
+My hobbies are:
+‣ Drawing
+‣ Writing manuals
+‣ Archery
+‣ Take care of my plants and animals
+‣ Make fancy food
+
+My goals for the next 5 years are:
+[ X ] - Invest R$ 50.000
+[ X ] - Get a job as a software engineer
+[ X ] - Travel alone
+[ X ] - Improve my conversation skills with strangers
+[ X ] - Build a computer from scratch
+[ x  ] - Learn either Spanish, Italian or French

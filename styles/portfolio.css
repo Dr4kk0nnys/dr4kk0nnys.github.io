@@ -9,10 +9,10 @@
 
     --info-title-color: salmon;
     --info-value-color: darkgray;
-    
+
     --technologies-border-color: #ffb300;
-    
-    
+
+
     --main-header-background: #264653;
     --footer-background-primary: #06d6a0;
     --footer-background-secondary: #118ab2;
@@ -27,7 +27,7 @@
     width: 8px;
     /* height: 0px; */
 }
-  
+
 /* Track */
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -35,15 +35,16 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(191, 191, 191); 
+    background: rgb(191, 191, 191);
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(165, 165, 165); 
+    background: rgb(165, 165, 165);
 }
 
-html, body {
+html,
+body {
     /* width: 100%;
     height: 100vh; */
     padding: 0px 0px;
@@ -55,7 +56,7 @@ a {
     color: var(--link-color);
 }
 
-img {
+.main-content>img {
     width: 240px;
     height: 275px;
     border-radius: 30px;
@@ -71,8 +72,9 @@ img {
 
 /* Small phones */
 @media (max-width: 500px) {
-    
-    html, body {
+
+    html,
+    body {
         margin: 0;
         padding: 0;
         min-width: 100%;
@@ -155,7 +157,7 @@ img {
 
 
 @media (max-width: 500px) {
-    
+
     .main-header {
         margin: 0;
         padding: 0px 0px 30px;
@@ -167,7 +169,7 @@ img {
 
     .main-header h1 {
         font-size: 30px;
-        
+
         padding: 10px 10px 30px 0px;
         margin: 0;
     }
@@ -178,7 +180,7 @@ img {
 
     .contacts {
         padding: 5px 0px;
-    
+
         display: block;
     }
 
@@ -188,42 +190,18 @@ img {
     }
 }
 
-
-
-
-.footer {
-    padding: 80px;
-
-    text-align: center;
-    
-    color: white;
-    font-size: 50px;
-    font-family: 'Quicksand', sans-serif;
-
-    margin-top: auto;
-
-}
-
-.footer a {
-    background: -webkit-linear-gradient(-45deg, #52eede, #3c64e7, #23a6d5, #23d5ab);
-    background-size: 400% 400%;
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    animation: gradient 5s ease infinite;
-}
-
-
 @keyframes gradient {
     0% {
         text-shadow: 0 0 12px #526fee;
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
         text-shadow: 0 0 9px #23d5ab;
 
     }
+
     100% {
         background-position: 0% 50%;
         text-shadow: 0 0 12px #526fee;
@@ -237,141 +215,98 @@ img {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+/*
+##################################
+##################################
+##################################
+           Projects
+##################################
+##################################
+##################################
+*/
 
 .projects {
+    width: 100%;
+    height: 100%;
+
+    padding-bottom: 200px;
+
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 .project {
-    display: flex;
+    width: 45%;
+    height: 500px;
 
     margin-bottom: 80px;
 }
 
-@media (min-width: 1500px) {
+@media (max-width: 768px) {
     .project {
-        max-width: 45%;
-        margin: 30px;
-    }
-}
-
-@media (max-width: 500px) {
-    .project {
-        display: block;
         width: 100%;
-        text-align: center;
-        border-bottom: rgb(153, 153, 153) 1px solid;
+        height: 600px;
+
+        padding: 0px 20px;
     }
 }
 
+.project>img {
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+}
 
+@media (max-width: 768px) {
+    .project>img {
+        object-fit: cover;
+    }
+}
 
-
-
-
-.project-text {
-    display: block;
-
-    margin-left: 15px;
-
+.project>.project-text>.project-title {
     font-family: 'Quicksand', sans-serif;
-}
+    font-weight: 900;
+    font-size: 26px;
 
-.carrousel {
-    width: 40vh;
-    min-width: 40vh;
-    max-width: 40vh;
-    height: 600px;
+    display: block;
+    margin-top: 20px;
 
-}
-/* #socialMedia { animation: socialMediaAnimation infinite 10s; }
-@keyframes socialMediaAnimation { 0% { content: url('../images/socialMedia-1.jpg'); } 100% { content: url('../images/socialMedia-2.jpg'); } }
-
-#scheduleApi { animation: scheduleApiAnimation infinite 10s; }
-@keyframes scheduleApiAnimation { 0% { content: url('../images/scheduleApi-1.jpg'); } 50% { content: url('../images/scheduleApi-2.jpg'); } 100% { content: url('../images/scheduleApi-3.jpg'); } } */
-
-
-@media (max-width: 500px) {
-    .carrousel {
-        width: 90%;
-        min-width: 90%;
-        max-width: 90%;
-        height: 400px;
-
-        display: inline-block;
-
-        margin-top: 10px;
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.title {
-    font-size: 36px;
     text-align: center;
-    margin-left: -20px;
 }
 
-.info {
-    font-size: 18px;
+.project>.project-text>.project-description {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    font-size: 16px;
 
-    margin: 50px 20px;
+    display: block;
+    margin-top: 10px;
+
+    /* TODO: */
+    text-align: center;
 }
 
-.info .topic {
-    color: var(--info-title-color);
-    display: inline-block;
+.project>.project-technologies {
+    width: 100%;
 
-    margin: 15px 0px 15px 0px;
-}
-.info .quick-summarize {
-    margin-bottom: 0px;
-}
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 
-.info .technologies {
-    display: inline;
+    margin-top: 20px;
 }
 
-.info .technologies span {
-    display: inline-flex;
-
-    padding: 5px 20px;
-    margin: 5px;
-
-    border-radius: 30px;
+.project>.project-technologies>.project-technology {
+    padding: 8px 16px;
+    margin: 2px;
 
     background-color: var(--technologies-border-color);
-    color: black;
+    color: var(--text-color);
+
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 200;
+    font-size: 14px;
+
+    border-radius: 8px;
 }
-
-.info .overview {
-    padding: 10px;
-}
-
-.info .links {
-    display: block;
-    position: relative;
-    margin-top: 60px;
-}
-
-
-
